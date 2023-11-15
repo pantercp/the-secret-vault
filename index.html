@@ -15,6 +15,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper.min.css">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/c0e039a635.js" crossorigin="anonymous"></script>
     <!-- <script defer src="js/accordion.js"></script> -->
@@ -99,7 +101,8 @@
     </div>
 
     <div class="team-section">
-        <img class="fade-in" src="images/shams-dark-notext.png" alt="">
+        <h2 class="fade-in scramble" data-value="MEET THE TEAM">MEET THE TEAM</h2>
+        <img class="fade-in" src="images/dancers.jpg" alt="">
         <p class="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore repellendus error harum,
             qui deleniti
             dolorum enim quo temporibus expedita? Obcaecati harum cumque a illum exercitationem ratione vitae atque,
@@ -108,16 +111,70 @@
         <button class="fade-in effect slide light">Meet the Team</button>
     </div>
 
+    <section class="reviews-section">
+        <h2 class="fade-in scramble" data-value="REVIEWS">REVIEWS</h2>
+        <section class="container-review">
+            <div class="review mySwiper">
+                <div class="review-content swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <img src="images/shams-dark-notext.png" alt="" class="image" />
+                        <div class="rating">
+                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        </div>
+                        <p>
+                            Mariam has a beautiful way with words. When I read her content, I can tell it's crafted with
+                            thought, experience, and expertise. She's wonderful to work with.
+                        </p>
+                        <div class="details">
+                            <span class="name">Ashlee Fechino</span>
+                            <span class="job">The Happiness Function</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="images/dancers.jpg" alt="" class="image" />
+                        <div class="rating">
+                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        </div>
+                        <p>
+                            Mariam has a beautiful way with words. When I read her content, I can tell it's crafted with
+                            thought, experience, and expertise. She's wonderful to work with.
+                        </p>
+                        <div class="details">
+                            <span class="name">Ashlee Fechino</span>
+                            <span class="job">The Happiness Function</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="images/shams-dark-notext.png" alt="" class="image" />
+                        <div class="rating">
+                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        </div>
+                        <p>
+                            Mariam has a beautiful way with words. When I read her content, I can tell it's crafted with
+                            thought, experience, and expertise. She's wonderful to work with.
+                        </p>
+                        <div class="details">
+                            <span class="name">Ashlee Fechino</span>
+                            <span class="job">The Happiness Function</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next nav-btn"><i class='bx bx-chevron-right'></i></div>
+                <div class="swiper-button-prev nav-btn"><i class='bx bx-chevron-left'></i></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </section>
+
 
     <div class="footer-section">
         <div class="footer-wrapper">
             <div class="artwork-list page-list">
-                <ul>Artwork
-                    <li><a href="#">Tawhid</a></li>
-                    <li><a href="#">Tawakkul</a></li>
-                    <li><a href="#">Fitrah</a></li>
-                    <li><a href="#">Shukar</a></li>
-                    <li><a href="#">Barakah</a></li>
+                <ul>Pages
+                    <li><a href="#">Book A Class</a></li>
+                    <li><a href="#">Class Information</a></li>
+                    <li><a href="#">Meet The Team</a></li>
+                    <li><a href="#">Help Center</a></li>
                 </ul>
             </div>
             <div class="main-section">
@@ -147,7 +204,7 @@
         </div>
     </div>
 
-    <!-- <script src="js/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.js"></script> -->
+    <script src="js/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.js"></script>
 
 </body>
 
