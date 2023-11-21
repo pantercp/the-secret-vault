@@ -158,7 +158,7 @@ button.effect {
 }
 
 button.effect.light {
-    color: var(--clr-light);
+    color: var(--foreground);
 
     &:hover,
     &:focus {
@@ -192,8 +192,8 @@ button.effect.slide:focus {
 
 button.effect.light.slide:hover,
 button.effect.light.slide:focus {
-    box-shadow: inset 9em 0 0 0 var(--clr-light);
-    color: var(--clr-dark);
+    box-shadow: inset 10em 0 0 0 var(--foreground);
+    color: var(--background);
 }
 
 /* --------Navigation-------- */
