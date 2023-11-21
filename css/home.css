@@ -11,6 +11,7 @@
 
 .hero-section .text-wrap{
     background-color: #000000be;
+    color: #eff4f5;
     padding: 2rem;
     border-radius: 1rem;
     margin: 1rem;
@@ -64,11 +65,17 @@
     font-size: 1.2rem;
 }
 
-.intro-section .stats-wrapper{
+/* .intro-section .stats-wrapper{
     padding-block: 2rem;
     display: flex;
     justify-content: space-around;
 }
+
+.intro-section .stat{
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+} */
 
 /* -------Classes------ */
 
