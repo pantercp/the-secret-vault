@@ -1,4 +1,4 @@
-.hero-section{
+.hero-section {
     background-image: url(../images/dancers.jpg);
     background-size: cover;
     background-position: 37% 50%;
@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.hero-section .text-wrap{
+.hero-section .text-wrap {
     background-color: #000000be;
     color: #eff4f5;
     padding: 2rem;
@@ -17,19 +17,19 @@
     margin: 1rem;
 }
 
-.hero-section h1{
+.hero-section h1 {
     font-size: 5rem;
     line-height: normal;
     font-family: "Space Mono", monospace;
 }
 
-.hero-section p{
+.hero-section p {
     font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 900px) {
 
-    .hero-section h1{
+    .hero-section h1 {
         font-size: 3rem;
     }
 
@@ -37,11 +37,11 @@
 
 @media only screen and (max-width: 600px) {
 
-    .hero-section h1{
+    .hero-section h1 {
         font-size: 2rem;
     }
 
-    .hero-section p{
+    .hero-section p {
         font-size: 1rem;
     }
 }
@@ -57,7 +57,7 @@
 
 /* --------Intro------- */
 
-.intro-section{
+.intro-section {
     max-width: 900px;
     padding: 2rem 1rem;
     margin-inline: auto;
@@ -80,19 +80,19 @@
 /* -------Classes------ */
 
 
-.class-section{
+.class-section {
     max-width: 900px;
     padding: 1rem;
     margin-inline: auto;
     text-align: center;
 }
 
-.class-section h2{
+.class-section h2 {
     font-size: 2.5rem;
     text-align: center;
 }
 
-.class-section .classes-contain{
+.class-section .classes-contain {
     margin-block: 1rem;
     display: flex;
     justify-content: space-between;
@@ -100,22 +100,22 @@
     column-gap: 1rem;
 }
 
-.class-section .classes-contain .contain-list{
+.class-section .classes-contain .contain-list {
     width: 80%;
     text-align: justify;
 }
 
-.class-section ul{
+.class-section ul {
     list-style-position: inside;
 }
 
-.class-section li{
+.class-section li {
     list-style-type: square;
     font-size: 1.2rem;
     margin-block: 0.5rem;
 }
 
-.class-section .stat{
+.class-section .stat {
     display: flex;
     align-items: center;
     column-gap: 1rem;
@@ -123,11 +123,11 @@
     margin: 0.5rem;
 }
 
-.class-section .stat i{
+.class-section .stat i {
     font-size: 4rem;
 }
 
-.class-section p.inline{
+.class-section p.inline {
     display: inline;
 }
 
@@ -165,7 +165,7 @@
 
 /* -------Meet The Team------ */
 
-.team-section{
+.team-section {
     max-width: 900px;
     padding: 1rem;
     margin-inline: auto;
@@ -173,12 +173,12 @@
     text-align: center;
 }
 
-.team-section h2{
+.team-section h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
-.team-section img{
+.team-section img {
     max-height: 300px;
     width: 800px;
     max-width: 100%;
@@ -189,8 +189,65 @@
     margin-bottom: 1rem;
 }
 
-.team-section button{
+.team-section button {
     margin-block: 2rem;
+}
+
+/* -------Help Center------- */
+
+.help-section {
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.help-section .help-wrap {
+    max-width: 600px;
+    margin-inline: auto;
+    border: 1px solid var(--background);
+    border-radius: 1rem;
+    background: rgb(4, 18, 20);
+    background: linear-gradient(138deg, rgba(4, 18, 20, 1) 0%, rgba(0, 0, 0, 1) 40%);
+    /* background-color: var(--navigation); */
+    padding: 1rem;
+    box-shadow: 3px 2px 5px var(--clr-light);
+    border-bottom: 2px solid var(--background);
+    border-right: 2px solid var(--background);
+}
+
+.help-section .help-wrap h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.help-section .help-wrap ul {
+    margin-bottom: 0.5rem;
+}
+
+.help-section .help-wrap i {
+    font-size: 6rem;
+    color: linear-gradient(138deg, rgba(4, 18, 20, 1) 0%, rgba(0, 0, 0, 1) 60%);;
+}
+
+.help-section .help-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 430px) {
+
+    .help-section .help-wrap h2 {
+        font-size: 2rem;
+    }
+
+    .help-section .help-container button{
+        order: 1;
+    }
+
 }
 
 /* -------Reviews------- */
@@ -228,7 +285,7 @@
     border-radius: 50%;
 }
 
-.review .rating{
+.review .rating {
     font-size: 1.5rem;
 }
 
