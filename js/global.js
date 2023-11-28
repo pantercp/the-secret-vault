@@ -116,14 +116,7 @@ function scrambler(element) {
   }, 30);
 }
 
-// Example usage:
-const h1Element = document.querySelector("h1");
-// Trigger the scrambler with a 1-second delay
-setTimeout(() => {
-  scrambler(h1Element);
-}, 100);
-
-// -----------Fade-In--------
+// -----------Fade-In with Scrambler--------
 
 const faders = document.querySelectorAll(".fade-in");
 
