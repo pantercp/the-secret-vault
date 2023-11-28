@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    margin: 2rem 1rem;
+    font-size: 2.3rem;
+}
+
+.policy-wrap{
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.policy-container{
+    max-width: 900px;
+    margin-inline: auto;
+    padding: 1rem;
+    background-color: var(--navigation);
+}
+
+.policy-container h2{
+    margin-block: 1rem;
+}
+
+.policy-container p{
+    margin-block: 0.5rem;
+    text-align: justify;
+
+}
