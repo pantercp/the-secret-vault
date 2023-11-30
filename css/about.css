@@ -50,7 +50,7 @@
 /* ---------FOUNDER SECTION------ */
 
 .founder-section {
-    margin-block: 4rem;
+    margin-block: 3rem;
     max-width: 900px;
     margin-inline: auto;
     padding-inline: 1rem;
@@ -86,7 +86,7 @@
     border-right: 2px solid var(--background);
 }
 
-.founder-section h1, .founder-section p{
+.founder-section h2, .founder-section p{
     margin-left: 50px;
 }
 
@@ -107,7 +107,7 @@
         text-align: center;
     }
 
-    .founder-section h1, p{
+    .founder-section h2, .founder-section p{
         margin-left: unset;
     }
 
