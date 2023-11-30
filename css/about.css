@@ -1,26 +1,28 @@
-.about-section{
+.about-section {
     max-width: 900px;
     margin-inline: auto;
     margin-block: 2rem;
     padding: 1rem;
 }
 
-.about-section h1{
+.about-section h1 {
     text-align: left;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.about-section .about-wrapper{
+.about-section .about-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 3rem;
+    row-gap: 2rem;
 }
 
-.about-section .about-wrapper img{
+.about-section .about-wrapper img {
     max-width: 200px;
     background-color: var(--navigation);
+    /* background: linear-gradient(138deg, rgba(4, 18, 20, 1) 0%, rgba(0, 0, 0, 1) 40%); */
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0px 0px 3px var(--clr-light);
@@ -28,7 +30,86 @@
     border-right: 2px solid var(--background);
 }
 
-.about-section .about-wrapper p{
+.about-section .about-wrapper p {
     font-size: 1.2rem;
     text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .about-section .about-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .about-section h1 {
+        text-align: center;
+    }
+
+}
+
+/* ---------FOUNDER SECTION------ */
+
+.founder-section {
+    margin-block: 4rem;
+    max-width: 900px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+.founder-section .founder-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.founder-section .founder-wrap img {
+    width: 250px;
+    height: 250px;
+    background-color: var(--navigation);
+    border-radius: 50%;
+    position: relative;
+    left: 25px;
+    border: 2px solid var(--navigation);
+    z-index: 9;
+}
+
+.founder-section .text-wrap {
+    text-align: left;
+    position: relative;
+    right: 25px;
+    background-color: var(--navigation);
+    background: linear-gradient(138deg, rgba(4, 18, 20, 1) 0%, rgba(0, 0, 0, 1) 40%);
+    padding: 2rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 1px var(--foreground);
+    border-bottom: 2px solid var(--background);
+    border-right: 2px solid var(--background);
+}
+
+.founder-section h1, .founder-section p{
+    margin-left: 50px;
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    .founder-section .founder-wrap {
+        flex-direction: column;
+    }
+
+    .founder-section .founder-wrap img {
+        left: unset;
+        top: 25px;
+    }
+
+    .founder-section .text-wrap {
+        right: unset;
+        text-align: center;
+    }
+
+    .founder-section h1, p{
+        margin-left: unset;
+    }
+
+
 }
