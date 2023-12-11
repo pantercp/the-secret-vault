@@ -206,10 +206,10 @@
     border: 1px solid var(--background);
     border-radius: 1rem;
     background: rgb(4, 18, 20);
-    background: linear-gradient(138deg, rgba(4, 18, 20, 1) 0%, rgba(0, 0, 0, 1) 40%);
+    background: var(--gradient);
     /* background-color: var(--navigation); */
     padding: 1rem;
-    box-shadow: 3px 2px 5px var(--clr-light);
+    box-shadow: 3px 2px 5px var(--foreground);
     border-bottom: 2px solid var(--background);
     border-right: 2px solid var(--background);
 }

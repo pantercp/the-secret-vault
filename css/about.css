@@ -78,10 +78,10 @@
     position: relative;
     right: 25px;
     background-color: var(--navigation);
-    background: linear-gradient(138deg, rgba(4, 18, 20, 1) 0%, rgba(0, 0, 0, 1) 40%);
+    background: var(--gradient);
     padding: 2rem 1rem 1rem 1rem;
     border-radius: 1rem;
-    box-shadow: 0px 0px 1px var(--foreground);
+    box-shadow: 1px 1px 4px var(--foreground);
     border-bottom: 2px solid var(--background);
     border-right: 2px solid var(--background);
 }
@@ -123,8 +123,31 @@ h2.team-head {
     font-size: 2.5rem;
 }
 
+.team-section h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.container-teacher {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.teacher {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
 .slide {
-    margin-block: 3rem;
+    margin-block: 1rem;
 }
 
 .slide h3.instructor {
@@ -144,8 +167,8 @@ h2.team-head {
     background-color: var(--navigation);
     padding: 1rem;
     border-radius: 1rem;
-    background: linear-gradient(138deg, rgba(4, 18, 20, 1) 0%, rgba(0, 0, 0, 1) 40%);
-    box-shadow: 0px 0px 1px var(--foreground);
+    background: var(--gradient);
+    box-shadow: 1px 1px 4px var(--foreground);
     border-bottom: 2px solid var(--background);
     border-right: 2px solid var(--background);
     padding-left: 60px;
@@ -159,6 +182,50 @@ h2.team-head {
     border-radius: 0.5rem;
     border: 2px solid var(--navigation);
     z-index: 9;
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    font-size: 1.5rem;
+    border-radius: 0.25rem;
+    /* transform: translateY(30px); */
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    background-color: var(--navigation);
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.nav-btn:hover {
+    background-color: #ccd7c582;
+}
+
+.nav-btn::after,
+.nav-btn::before {
+    font-size: 20px;
+    color: var(--secondary);
+    ;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #4070f4;
 }
 
 @media only screen and (max-width: 650px) {
@@ -181,6 +248,10 @@ h2.team-head {
 
     .slide h3.instructor {
         text-align: center;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        top: 225px;
     }
 
 }
@@ -253,85 +324,4 @@ h2.team-head {
 
 .slide .contain-question .toggle-button.open::after {
     transform: rotate(-180deg);
-}
-
-/* --------MEET THE TEAM-------- */
-
-.team-section h2 {
-    text-align: center;
-    font-size: 3rem;
-    padding-block: 1rem 0;
-}
-
-.container-teacher {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-}
-
-.teacher {
-    position: relative;
-    max-width: 900px;
-    width: 100%;
-    padding-top: 20px;
-    overflow: hidden;
-}
-
-.teacher .slide {
-    display: flex;
-    justify-content: center;
-    column-gap: 2rem;
-    align-items: center;
-}
-
-.teacher .slide img {
-    max-width: 200px;
-}
-
-
-.nav-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    /* transform: translateY(30px); */
-    background-color: rgba(0, 0, 0, 0.1);
-    transition: 0.2s;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    position: absolute;
-    top: 50%;
-    z-index: 999;
-    background-color: #ccd7c558;
-}
-
-.swiper-button-next {
-    right: 0;
-}
-
-.nav-btn:hover {
-    background-color: #ccd7c582;
-}
-
-.nav-btn::after,
-.nav-btn::before {
-    font-size: 20px;
-    color: var(--secondary);
-    ;
-}
-
-.swiper-pagination-bullet {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #4070f4;
 }
