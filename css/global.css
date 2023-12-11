@@ -521,13 +521,12 @@ button.effect.light.slide:focus {
     color: var(--clr-accent);
     border-radius: 5px;
     padding: 0px;
-
+    font-size: 1.9rem;
 }
 
 .footer-section .main-section i:hover {
     box-shadow: inset 0 -1.5em 0 0 var(--foreground);
     color: var(--background);
-    padding: 2px;
     border-radius: 5px;
     font-size: 1.9rem;
 }
