@@ -260,12 +260,19 @@ button.effect.light.slide:focus {
 
 #header .row-menu .main-pages li.cta a {
     font-size: 0.7rem;
-    background-color: var(--foreground);
-    color: #bcb8b1;
+    background-color: var(--background);
+    color: var(--foreground);
     border-radius: 0.5rem;
     padding: 0.5rem 0.75rem;
     margin-inline: 0.5rem;
     line-height: 4;
+    border: 1px solid var(--background);
+    box-shadow: 1px 1px 4px var(--foreground);
+}
+
+#header .row-menu .main-pages li.cta:hover a {
+    box-shadow: 1px 1px 8px var(--foreground);
+    border: 2px solid var(--navigation);
 }
 
 #header .row-menu i {
@@ -511,6 +518,15 @@ button.effect.light.slide:focus {
     display: flex;
     justify-content: center;
     column-gap: 20px;
+}
+
+.footer-section .main-section .pages a{
+    color: var(--foreground);
+    text-decoration: none;
+}
+
+.footer-section .main-section .pages a:hover{
+    text-decoration: underline;
 }
 
 .footer-section .main-section .socials {
