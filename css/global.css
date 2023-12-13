@@ -304,6 +304,10 @@ button.effect.light.slide:focus {
     border: 1px solid var(--foreground);
 }
 
+#header .row-menu li.last-page:hover {
+    cursor: default;
+}
+
 #header .row-menu li.last-page:hover .sub-drop {
     display: block;
 }
