@@ -1,0 +1,89 @@
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.faq-section {
+    max-width: 900px;
+    margin-inline: auto;
+    margin-block: 1rem;
+}
+
+h4 {
+    background-color: var(--navigation);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    padding: 1rem;
+}
+
+.question-wrapper {
+    border-bottom: 1px solid var(--navigation);
+    max-height: 4rem;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.question-wrapper.open {
+    max-height: 500px;
+}
+
+.contain-question {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.contain-question .toggle-button {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain-question .toggle-button::before,
+.contain-question .toggle-button::after {
+    content: '';
+    position: absolute;
+    background: var(--foreground);
+    border-radius: 0.5rem;
+    width: 80%;
+    height: 2px;
+    transition: all 0.3s ease-in;
+}
+
+.contain-question .toggle-button::before {
+    transform: rotate(90deg);
+}
+
+.contain-question .toggle-button::after {
+    transform: rotate(0deg);
+}
+
+.contain-question .toggle-button.open::before {
+    transform: rotate(360deg);
+}
+
+.contain-question .toggle-button.open::after {
+    transform: rotate(-180deg);
+}
+
+
+@media only screen and (max-width: 370px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+}
