@@ -39,13 +39,18 @@
 
 .hero-section .text-wrap,
 .hero-section .cta-wrap{
-    background-color: #0009;
+    background-color: #a1a1a199;
     padding: 1rem;
     margin: 0.5rem;
     border-radius: 1rem;
     border: 1px solid var(--background);
     border-bottom: 2px solid var(--background);
     border-right: 2px solid var(--background);
+}
+
+.darkmode .hero-section .text-wrap,
+.darkmode .hero-section .cta-wrap{
+    background-color: #0009;
 }
 
     

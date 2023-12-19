@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Space Mono', sans-serif;
+    /* font-family: 'Rubik Mono One', 'Space Mono', sans-serif; */
     box-sizing: border-box;
 }
 
