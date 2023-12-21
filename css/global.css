@@ -42,7 +42,7 @@ body {
     /* SunMoon CSS */
     transition: all .2s ease-in-out;
     background: var(--background);
-    background: linear-gradient(138deg, rgba(239,244,245,1) 0%, rgba(232,241,242,1) 60%);
+    /* background: linear-gradient(138deg, rgba(239,244,245,1) 0%, rgba(232,241,242,1) 60%); */
     color: var(--foreground);
 }
 
@@ -58,8 +58,7 @@ body {
     --background: var(--clr-dark);
     --accent: var(--clr-accent);
     --gradient: var(--clr-gradient);
-
-    background: linear-gradient(138deg, rgba(4, 18, 20, 1) 0%, rgba(0, 0, 0, 1) 60%);
+    /* background: linear-gradient(138deg, rgba(4, 18, 20, 1) 0%, rgba(0, 0, 0, 1) 60%); */
 
 }
 
