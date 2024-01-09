@@ -5,8 +5,9 @@
     padding: 1rem;
 }
 
-.about-section h1 {
-    text-align: left;
+.title h1 {
+    margin-block: 2rem;
+    text-align: center;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -45,6 +46,86 @@
     }
 
 }
+
+/* ACCORDION */
+
+.about-section .contain-question {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: var(--navigation);
+}
+
+.about-section .question-wrapper {
+    max-height: 3rem;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    /* background-color: var(--navigation); */
+    border: 1px solid var(--navigation);
+    border-radius: 0.25rem;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.about-section .question-wrapper p {
+    margin: 1rem;
+    margin-left: 0;
+    padding-left: 1rem;
+    position: relative;
+}
+
+/* .about-section .question-wrapper p::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--foreground);
+    height: 100%;
+    width: 2px;
+} */
+
+.about-section .question-wrapper.open {
+    max-height: 1500px;
+    /* border: 1px solid var(--foreground); */
+}
+
+.about-section .contain-question .toggle-button {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .contain-question .toggle-button::before,
+.about-section .contain-question .toggle-button::after {
+    content: '';
+    position: absolute;
+    background: var(--foreground);
+    border-radius: 0.5rem;
+    width: 80%;
+    height: 2px;
+    transition: all 0.3s ease-in;
+}
+
+.about-section .contain-question .toggle-button::before {
+    transform: rotate(90deg);
+}
+
+.about-section .contain-question .toggle-button::after {
+    transform: rotate(0deg);
+}
+
+.about-section .contain-question .toggle-button.open::before {
+    transform: rotate(360deg);
+}
+
+.about-section .contain-question .toggle-button.open::after {
+    transform: rotate(-180deg);
+}
+
 
 /* ---------FOUNDER SECTION------ */
 
@@ -165,6 +246,7 @@ h2.team-head {
 .slide .slide-content .text-wrap {
     background-color: var(--navigation);
     padding: 1rem;
+    text-align: justify;
     border-radius: 1rem;
     background: var(--gradient);
     box-shadow: 1px 1px 4px var(--foreground);
