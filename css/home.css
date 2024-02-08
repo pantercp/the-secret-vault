@@ -1,11 +1,11 @@
 .hero-section {
-    background-image: url(../images/dancers.jpg);
+    background-image: url(../images/hero-team.jpg);
     background-size: cover;
-    background-position: 37% 68%;
-    height: 500px;
+    background-position: 53% 3%;
+    height: 800px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     text-align: center;
 }
 
@@ -15,6 +15,7 @@
     padding: 2rem;
     border-radius: 1rem;
     margin: 1rem;
+    margin-bottom: 3rem;
 }
 
 .hero-section h1 {
@@ -188,11 +189,11 @@
 }
 
 .team-section img {
-    max-height: 300px;
+    max-height: 380px;
     width: 800px;
     max-width: 100%;
     object-fit: cover;
-    object-position: 50% 68%;
+    object-position: 50% 0%;
     border-radius: 1rem;
     border: 1px solid var(--navigation);
     margin-bottom: 1rem;
