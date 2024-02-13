@@ -173,6 +173,43 @@
 }
 
 
+/* --------YouTube Section------ */
+
+
+.youtube-text {
+    max-width: 400px;
+    margin-inline: auto;
+}
+
+.youtube-text h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.icon-text-wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.youtube-text p {
+    font-size: 1.4rem;
+}
+
+.youtube-text i {
+    font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 400px) {
+
+    .youtube-text p {
+        font-size: 1.1rem;
+    }
+
+}
+
+
 /* -------Meet The Team------ */
 
 .team-section {
